@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Usuń Element",
+    "version": "1.0",
+    "description": "Automatycznie usuwa irytujący element z serwisu gazeta.pl",
+    "content_scripts": [
+        {
+          "matches": ["*://*.gazeta.pl/*", 
+          "*://*.sport.pl/*", 
+          "*://*.plotek.pl/*", 
+          "*://*.onet.pl/*", 
+          "*://*.wiadomosci.wp.pl/*"
+        ],
+          "js": ["content.js"]
+        }
+      ]
+  }
+  
